@@ -169,25 +169,13 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^(\s*)\$\$?(?=\(|$)$</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>constant.language.name.latex.filter.jade</string>
-				</dict>
-			</dict>
+			<string>^(\s*)(?=\$\$?)</string>
 			<key>end</key>
 			<string>^(?!(\1\s)|\s*$)</string>
 			<key>name</key>
 			<string>text.tex.latex.filter.jade</string>
 			<key>patterns</key>
 			<array>
-				<dict>
-					<key>include</key>
-					<string>#filter_args</string>
-				</dict>
 				<dict>
 					<key>include</key>
 					<string>text.tex.latex</string>
